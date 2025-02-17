@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "017e7e00-66be-426a-bb6e-33d3eec96e0e",
+		"name": "socialnetwork",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8087/addUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId\" : \"sue\",\r\n    \"name\":\"susan\",\r\n    \"email\" : \"susan@989.com\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/addUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/removeUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId\" : \"joe\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/removeUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"removeUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/listUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/listUsers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"listUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/createFriendship",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId1\" : \"sue\",\r\n    \"userId2\":\"Teressa\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/createFriendship",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"createFriendship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/listFriends",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId1\" : \"sue\"\r\n    \r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/listFriends",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"listFriends"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/removeFriendship",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId1\" : \"sue\",\r\n    \"userId2\":\"Teressa\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/removeFriendship",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"removeFriendship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/findShortestPath",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId1\" : \"sue\",\r\n    \"userId2\":\"Teressa\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/findShortestPath",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"findShortestPath"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/identifyCommunities",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/identifyCommunities",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"identifyCommunities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8087/calculateDegreeCentrality",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "xyz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2lyaXNjIiwiZXhwIjoxNzE4MDQzNDA2fQ.fKx-O32AfHW0BFpqASvo1nSoDHeOPk_v36dQi7Y-ExQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"userId1\" : \"sue\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8087/calculateDegreeCentrality",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8087",
+					"path": [
+						"calculateDegreeCentrality"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
